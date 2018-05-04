@@ -1,12 +1,3 @@
-DROP DATABASE IF EXISTS feathers;
-CREATE DATABASE feathers;
-
-\c feathers;
-
-
-DROP TABLE IF EXISTS users, bffs, flagged, trips, attributes, threads, messages, bucketlist;
-
-
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   username VARCHAR NOT NULL UNIQUE,
