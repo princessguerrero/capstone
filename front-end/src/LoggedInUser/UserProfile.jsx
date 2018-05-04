@@ -177,7 +177,7 @@ class UserProfile extends React.Component {
   handleClickAddTrip = e => {
     e.preventDefault();
     const { username, user } = this.state;
-    return (window.location.href = `http://localhost:3000/users/me/${username}/trips/add`);
+    return (window.location.href = `https://fab-feathers.herokuapp.com/users/me/${username}/trips/add`);
   };
 
  
