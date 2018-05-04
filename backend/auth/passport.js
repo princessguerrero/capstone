@@ -1,6 +1,6 @@
 const passport = require('passport')
 const pgp = require('pg-promise')({})
-const db = pgp(process.env.postgresql-convex-44205);
+const db = pgp(process.env.DATABASE_URL);
 
 module.exports = () => {
     passport.serializeUser((user, done) => {
